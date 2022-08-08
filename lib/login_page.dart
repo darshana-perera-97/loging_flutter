@@ -11,17 +11,21 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[350],
+      backgroundColor: Color.fromARGB(255, 193, 236, 254),
       body: SafeArea(
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              Icon(
+                Icons.phone_android,
+                size: 100,
+              ),
               //hello again text
               Center(
                   child: Text(
                 'Hello again',
-                style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
               )),
               SizedBox(
                 height: 10,
@@ -100,12 +104,35 @@ class _LoginPageState extends State<LoginPage> {
               Center(
                   child: Text(
                 'Login With ',
-                style: TextStyle(fontSize: 15,color: Colors.black87),
+                style: TextStyle(
+                    fontSize: 15,
+                    color: Colors.black87,
+                    fontWeight: FontWeight.bold),
               )),
               SizedBox(
-                height: 40,
+                height: 5,
               ),
               //login ways
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.account_box,
+                    size: 40,
+                  ),
+                  Icon(
+                    Icons.admin_panel_settings,
+                    size: 40,
+                  ),
+                  Icon(
+                    Icons.android_rounded,
+                    size: 40,
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 20,
+              ),
 
               //not a member? regiter now  text
               Center(
