@@ -20,6 +20,14 @@ class _RegisterState extends State<Register> {
               SizedBox(
                 height: 30,
               ),
+              Icon(
+                Icons.directions_car_filled_outlined,
+                size: 60,
+                color: Colors.deepPurple,
+              ),
+              SizedBox(
+                height: 10,
+              ),
               Text(
                 "Registration",
                 style: TextStyle(
@@ -89,7 +97,8 @@ class _RegisterState extends State<Register> {
                     padding: const EdgeInsets.only(left: 20.0),
                     child: TextField(
                       decoration: InputDecoration(
-                          border: InputBorder.none, hintText: 'Email Address'),
+                          border: InputBorder.none,
+                          hintText: 'Telephone Number'),
                     ),
                   ),
                 ),
@@ -108,7 +117,27 @@ class _RegisterState extends State<Register> {
                     padding: const EdgeInsets.only(left: 20.0),
                     child: TextField(
                       decoration: InputDecoration(
-                          border: InputBorder.none, hintText: 'User Name'),
+                          border: InputBorder.none,
+                          hintText: 'Vehicle Chesi Number'),
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                child: Container(
+                  decoration: BoxDecoration(
+                      color: Colors.grey[200],
+                      border: Border.all(color: Colors.white),
+                      borderRadius: BorderRadius.circular(12)),
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 20.0),
+                    child: TextField(
+                      decoration: InputDecoration(
+                          border: InputBorder.none, hintText: 'Vehicle Number'),
                     ),
                   ),
                 ),
@@ -212,6 +241,9 @@ class _RegisterState extends State<Register> {
                   )
                 ],
               )),
+              SizedBox(
+                height: 20,
+              ),
             ],
           ),
         ),

@@ -16,7 +16,7 @@ class _LoadingPageState extends State<LoadingPage> {
       body: Center(
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
           Icon(
-            Icons.phone_android,
+            Icons.directions_car_filled_outlined,
             size: 200,
             color: Colors.deepPurple,
           ),

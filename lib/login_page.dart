@@ -19,7 +19,7 @@ class _LoginPageState extends State<LoginPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Icon(
-                Icons.phone_android,
+                Icons.directions_car_filled_outlined,
                 size: 100,
                 color: Colors.deepPurple,
               ),
