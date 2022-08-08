@@ -39,7 +39,7 @@ class _RegisterState extends State<Register> {
                 height: 30,
               ),
               Text(
-                "Fill With your Details",
+                "First register in fuelpass.gov.lk",
                 style: TextStyle(
                     fontSize: 18,
                     // fontWeight: FontWeight.bold,
