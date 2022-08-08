@@ -24,7 +24,7 @@ class _LoadingPageState extends State<LoadingPage> {
             height: 15.0,
           ),
           Text(
-            "Mobile App Login",
+            "Fuel Filling",
             style: TextStyle(
                 fontSize: 30.0,
                 fontWeight: FontWeight.bold,
