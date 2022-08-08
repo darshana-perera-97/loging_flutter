@@ -12,7 +12,7 @@ class _LoadingPageState extends State<LoadingPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 222, 222, 222),
+      backgroundColor: Color.fromARGB(255, 245, 232, 255),
       body: Center(
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
           Icon(
@@ -38,8 +38,7 @@ class _LoadingPageState extends State<LoadingPage> {
               foregroundColor: MaterialStateProperty.all<Color>(Colors.blue),
             ),
             onPressed: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => LoginPage()));
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>LoginPage()));
             },
             child: Text(
               'Go to Next Page',

@@ -11,7 +11,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 193, 236, 254),
+      backgroundColor: Color.fromARGB(255, 245, 232, 255),
       body: SafeArea(
         child: Center(
           child: Column(
@@ -20,12 +20,16 @@ class _LoginPageState extends State<LoginPage> {
               Icon(
                 Icons.phone_android,
                 size: 100,
+                color: Colors.deepPurple,
               ),
               //hello again text
               Center(
                   child: Text(
                 'Hello again',
-                style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+                style: TextStyle(
+                    fontSize: 40,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.deepPurple),
               )),
               SizedBox(
                 height: 10,
@@ -81,21 +85,30 @@ class _LoginPageState extends State<LoginPage> {
                 height: 20,
               ),
               //sign up button
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 25.0),
-                child: Container(
-                  padding: EdgeInsets.all(15),
-                  decoration: BoxDecoration(color: Colors.blue),
-                  child: Center(
-                      child: Text(
-                    "Sign In",
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 18.0,
-                        fontWeight: FontWeight.bold),
-                  )),
+
+              TextButton(
+                style: ButtonStyle(
+                  foregroundColor:
+                      MaterialStateProperty.all<Color>(Colors.blue),
+                ),
+                onPressed: () {},
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                  child: Container(
+                    padding: EdgeInsets.all(15),
+                    decoration: BoxDecoration(color: Colors.deepPurple),
+                    child: Center(
+                        child: Text(
+                      "Sign In",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18.0,
+                          fontWeight: FontWeight.bold),
+                    )),
+                  ),
                 ),
               ),
+
               SizedBox(
                 height: 30,
               ),
@@ -143,11 +156,18 @@ class _LoginPageState extends State<LoginPage> {
                     'Not a member ',
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
-                  Text(
-                    'Register Now',
-                    style: TextStyle(
-                        fontWeight: FontWeight.bold, color: Colors.blue),
-                  ),
+                  TextButton(
+                    style: ButtonStyle(
+                      foregroundColor:
+                          MaterialStateProperty.all<Color>(Colors.blue),
+                    ),
+                    onPressed: () {},
+                    child: Text(
+                      'Register Now',
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold, color: Colors.blue),
+                    ),
+                  )
                 ],
               )),
             ],
