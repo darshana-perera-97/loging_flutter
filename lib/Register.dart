@@ -118,7 +118,7 @@ class _RegisterState extends State<Register> {
                     child: TextField(
                       decoration: InputDecoration(
                           border: InputBorder.none,
-                          hintText: 'Vehicle Chesi Number'),
+                          hintText: 'ID card number'),
                     ),
                   ),
                 ),
@@ -138,6 +138,25 @@ class _RegisterState extends State<Register> {
                     child: TextField(
                       decoration: InputDecoration(
                           border: InputBorder.none, hintText: 'Vehicle Number'),
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                child: Container(
+                  decoration: BoxDecoration(
+                      color: Colors.grey[200],
+                      border: Border.all(color: Colors.white),
+                      borderRadius: BorderRadius.circular(12)),
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 20.0),
+                    child: TextField(
+                      decoration: InputDecoration(
+                          border: InputBorder.none, hintText: 'Vehicle Chesi Number'),
                     ),
                   ),
                 ),

@@ -95,7 +95,7 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Register()));
+                      MaterialPageRoute(builder: (context) => Profile()));
                 },
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 25.0),
